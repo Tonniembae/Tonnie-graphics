@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonnie Graphics and Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-hero {
+            background-image: url('img/About-banner-Jim-Fahad-Digital.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .bg-services {
+            background-image: url('img/Services-banner-Jim-Fahad-Digital.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .bg-projects {
+            background-image: url('img/UIUX-banner-Jim-Fahad-Digital.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .bg-testimonials {
+            background-image: url('img/Home-testimonial-BG-Jim-Fahad-Digital.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .bg-contact {
+            background-image: url('img/Contact-banner-Jim-Fahad-Digital.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .section {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 4rem 0;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">Tonnie Graphics and Design</div>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-gray-400">Home</a></li>
+                <li><a href="#about" class="hover:text-gray-400">About</a></li>
+                <li><a href="#services" class="hover:text-gray-400">Services</a></li>
+                <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
+                <li><a href="#testimonials" class="hover:text-gray-400">Testimonials</a></li>
+                <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Landing Section -->
+    <section id="home" class="bg-hero h-screen flex items-center justify-center">
+        <h1 class="text-5xl text-white text-center fade-in">Your Partner in Technology Solutions</h1>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-100 h-screen flex items-center">
+        <div class="container mx-auto text-center section">
+            <h2 class="text-4xl font-bold mb-10 fade-in">About Us</h2>
+            <p class="fade-in">We are a leading IT company dedicated to providing innovative solutions to our clients. Our team of experts specializes in various fields, ensuring that we deliver high-quality services tailored to your needs.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-services h-screen flex items-center">
+        <div class="container mx-auto text-center section">
+            <h2 class="text-4xl font-bold mb-10 fade-in">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg fade-in">
+                    <h3 class="text-2xl font-semibold">App Development</h3>
+                    <p>Building robust mobile applications.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg fade-in">
+                    <h3 class="text-2xl font-semibold">Web Development</h3>
+                    <p>Creating responsive and engaging websites.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg fade-in">
+                    <h3 class="text-2xl font-semibold">SEO</h3>
+                    <p>Optimizing your website for search engines.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg fade-in">
+                    <h3 class="text-2xl font-semibold">UI/UX Design</h3>
+                    <p>Designing user-friendly interfaces.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg fade-in">
+                    <h3 class="text-2xl font-semibold">Data Science</h3>
+                    <p>Leveraging data for better insights.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg fade-in">
+                    <h3 class="text-2xl font-semibold">Branding</h3>
+                    <p>Creating logos, banners, and resumes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-projects h-screen flex items-center">
+        <div class="container mx-auto text-center section">
+            <h2 class="text-4xl font-bold mb-10 fade-in">Our Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg fade-in">
+                    <h3 class="text-2xl font-semibold">Project One</h3>
+                    <p>Short description of the project.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg fade-in">
+                    <h3 class="text-2xl font-semibold">Project Two</h3>
+                    <p>Short description of the project.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-lg fade-in">
+                    <h3 class="text-2xl font-semibold">Project Three</h3>
+                    <p>Short description of the project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="bg-testimonials h-screen flex items-center">
+        <div class="container mx-auto text-center section">
+            <h2 class="text-4xl font-bold mb-10 fade-in">What Our Clients Say</h2>
+            <div class="flex flex-col space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg fade-in">
+                    <p>"Fantastic service and support!" - Client A</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg fade-in">
+                    <p>"Highly recommend their expertise." - Client B</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg fade-in">
+                    <p>"The team delivered beyond our expectations." - Client C</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-contact h-screen flex items-center">
+        <div class="container mx-auto text-center section">
+            <h2 class="text-4xl font-bold mb-10 fade-in">Contact Us</h2>
+            <form class="space-y-4 fade-in">
+                <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded">
+                <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded">
+                <textarea rows="4" placeholder="Your Message" class="w-full p-3 border border-gray-300 rounded"></textarea>
+                <button type="submit" class="bg-blue-500 text-white py-3 px-6 rounded hover:bg-blue-600">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <div class="mb-4">
+                <span class="text-xl font-bold">IT Company Logo</span>
+            </div>
+            <div class="mb-4">
+                <p>&copy; 2024 IT Company. All rights reserved.</p>
+                <p>Follow us on:
+                    <a href="#" class="text-blue-400 hover:underline">Facebook</a>,
+                    <a href="#" class="text-blue-400 hover:underline">Twitter</a>,
+                    <a href="#" class="text-blue-400 hover:underline">LinkedIn</a>
+                </p>
+            </div>
+            <div>
+                <p>123 IT Street, Tech City, Country</p>
+                <p>Email: info@itcompany.com | Phone: (123) 456-7890</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Fade-in animation
+        document.addEventListener("DOMContentLoaded", () => {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+
+            fadeElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
